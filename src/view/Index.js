@@ -4,9 +4,12 @@ import {Link} from 'react-router';
 
 import Header from '../component/Header';
 import Footer from '../component/Footer';
+import Banner from './Banner';
 
 // import http from '../common/http';
 import util from '../common/util';
+
+
 
 class Index extends Component {
     constructor(props) {
@@ -50,10 +53,13 @@ class Index extends Component {
         });
     }
 
+
     render() {
         return (
             <div className="index">
                 <Header history={this.props.history} website_menu_id="home"/>
+
+                <Banner />
 
                 <div className="margin-top-20 margin-bottom-20">
                     {

@@ -58,7 +58,8 @@ Header.propTypes = {
 };
 
 Header.defaultProps = {
-    website_menu_id: ''
+    website_menu_id: '',
+    keyword: ''
 };
 
 
