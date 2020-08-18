@@ -1,39 +1,60 @@
 {
-  "name": "website",
+  "name": "my-app",
   "version": "0.1.0",
   "private": true,
+  "main": "main.js",
+  "homepage": ".",
   "dependencies": {
-    "history": "^1.17.0",
-    "moment": "^2.22.2",
-    "rc-form": "^1.5.0",
-    "rc-print": "^1.0.2",
-    "rc-upload": "^2.4.3",
-    "react": "^0.14.8",
-    "react-awesome-swiper": "^1.4.16",
-    "react-bootstrap": "^0.31.5",
-    "react-dom": "^0.14.8",
-    "react-overlays": "^0.8.3",
-    "react-redux": "^4.4.1",
-    "react-router": "^1.0.3",
-    "react-router-redux": "^2.1.0",
-    "react-scripts-ie8": "^0.9.7",
-    "react-slick": "^0.15.4",
-    "redux": "3.3.1",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.4.0",
+    "@testing-library/user-event": "^7.2.1",
+    "antd": "^3.26.11",
+    "bluebird": "^3.7.2",
+    "bootstrap": "^4.4.1",
+    "dva": "^2.4.1",
+    "qrcode.react": "^1.0.0",
+    "react": "^16.12.0",
+    "react-bootstrap": "^1.0.0-beta.16",
+    "react-countup": "^4.3.3",
+    "react-dom": "^16.12.0",
+    "react-router-bootstrap": "^0.25.0",
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "3.3.1",
+    "reconnecting-websocket": "^4.4.0",
     "reqwest": "^2.0.5"
   },
-  "devDependencies": {},
-  "eslintConfig": {
-    "extends": "react-app",
-    "rules": {
-      "no-undef": "off",
-      "no-restricted-globals": "off",
-      "no-unused-vars": "off"
-    }
-  },
   "scripts": {
-    "start": "react-scripts-ie8 start",
-    "build": "react-scripts-ie8 build",
-    "test": "react-scripts-ie8 test --env=jsdom",
-    "eject": "react-scripts-ie8 eject"
-  }
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "electron": "electron .",
+    "packager": "electron-packager . myElectron --platform=win32 --arch=x64 --icon=computer.ico --out=./myClient --asar --app-version=0.0.1 --overwrite --ignore=node_modules --electron-version 9.0.5"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "electron": "^9.0.5"
+  },
+  "description": "中采云平台门户网站",
+  "repository": {
+    "type": "git",
+    "url": "http://120.79.138.205:8081/zhongcaiyun/zcy-website"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }
