@@ -34,6 +34,28 @@ class App extends Component {
 
     }
 
+    // 函数列表渲染例子
+    handleListItems = () => {
+        let arr = [{
+            id: 0,
+            active: false,
+            text: '我是文字0'
+        }, {
+            id: 2,
+            active: true,
+            text: '我是文字2'
+        }];
+
+        let listItems = arr.map((data) => {
+            if(data.active) {
+                return <h2>{data.text}</h2>
+            } else{
+                return <h3>{data.id}</h3>
+            }
+        });
+        return listItems
+    };
+
     handleNewsLoad = () => {
         this.setState({
             isLoading: true,
