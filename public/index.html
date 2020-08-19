@@ -25,9 +25,37 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
     <title>中采云官网</title>
+    <style>
+      #loading {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        z-index: 999;
+        text-align: center;
+        background: #ffffff;
+      }
+      .logo {
+        position: absolute;
+        top: 50%;
+        margin-top: -40px;
+        margin-left: -40px;
+        width: 80px;
+        height: 80px;
+        animation: App-logo-spin infinite 20s linear;
+      }
+      @keyframes App-logo-spin {
+        from { transform: rotate(0deg); }
+        to { transform: rotate(360deg); }
+      }
+    </style>
   </head>
   <body>
     <div id="root"></div>
+    <div id="loading">
+      <img src='./logo.svg' class="logo"/>
+    </div>
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
