@@ -22,11 +22,15 @@ import {Router as HashRouter , Route, Switch, Redirect } from "react-router-dom"
 import {createHashHistory} from 'history'
 const history = createHashHistory();
 
-
+// 登录状态
+// const isLogin = false;
 ReactDOM.render(
     <HashRouter history={history}>
         {/*<Router>*/}
             <Switch>
+                {/*使用高阶组件实现路由守卫*/}
+                {/*<Route render={()=>(isLogin ? <Redirect to='/index'/> : <Redirect to='/about/index'/>)} />*/}
+
                 <Route exact path="/" render={()=>(<Redirect to='/index'/>)}/>
                 <Route path="/index" component={Index}/>
                 <Route path="/about/index" component={AboutIndex} />
