@@ -47,7 +47,7 @@
     ]
   },
   "devDependencies": {
-    "electron": "^9.0.5"
+    "electron": "^18.3.7"
   },
   "description": "中采云平台门户网站",
   "repository": {
